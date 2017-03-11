@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.iweb.nct.entity">
+
+	<class name="User" table="NTC_USERS" lazy="true">
+        <id name="id" type="java.lang.Integer">
+            <generator class="native">
+            	<param name="sequence">ntc_users_seq</param>
+            </generator>
+        </id>
+        <property name="loginname" not-null="true" length="50" column="loginname"/>
+        <property name="loginpass" not-null="true" length="50" column="loginpass"/>
+        <property name="uname" length="50" not-null="true"/>
+        <property name="image" column="image"/>
+    </class>
+
+</hibernate-mapping>

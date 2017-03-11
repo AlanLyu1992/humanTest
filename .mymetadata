@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="nct"
+  id="myeclipse.1399871826015"
+  context-root="/nct"
+  j2ee-spec="1.4"
+  archive="nct.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	
+	<filter>
+    	<filter-name>EncodingFilter</filter-name>
+    	<filter-class>com.iweb.nct.filter.EncodingFilter</filter-class>
+  	</filter>
+  	<filter-mapping>
+    	<filter-name>EncodingFilter</filter-name>
+    	<url-pattern>/servlet/*</url-pattern>
+  	</filter-mapping>
+	
+	
+  	<servlet>
+    	<servlet-name>GameServlet</servlet-name>
+	    <servlet-class>com.iweb.nct.servlet.GameServlet</servlet-class>
+  	</servlet>
+  	<servlet>
+    	<servlet-name>TimeServlet</servlet-name>
+    	<servlet-class>com.iweb.nct.servlet.TimeServlet</servlet-class>
+  	</servlet>
+ 
+  	<servlet>
+    	<servlet-name>SaveResultServlet</servlet-name>
+    	<servlet-class>com.iweb.nct.servlet.SaveResultServlet</servlet-class>
+  	</servlet>
+  <servlet>
+    <servlet-name>ActionServlet</servlet-name>
+    <servlet-class>org.struts.servlet.ActionServlet</servlet-class>
+  </servlet>
+
+
+
+  	
+  	<servlet-mapping>
+    	<servlet-name>GameServlet</servlet-name>
+    	<url-pattern>/servlet/GameServlet</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+    	<servlet-name>TimeServlet</servlet-name>
+    	<url-pattern>/servlet/TimeServlet</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+    	<servlet-name>SaveResultServlet</servlet-name>
+    	<url-pattern>/servlet/SaveResultServlet</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+    	<servlet-name>ActionServlet</servlet-name>
+    	<url-pattern>*.action</url-pattern>
+  	</servlet-mapping>
+  
+  
+  
+  
+  
+  	<welcome-file-list>
+  		<welcome-file>index.html</welcome-file>
+    	<welcome-file>index.jsp</welcome-file>
+  	</welcome-file-list>
+</web-app>

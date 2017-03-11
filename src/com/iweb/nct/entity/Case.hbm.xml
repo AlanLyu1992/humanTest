@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.iweb.nct.entity">
+
+	<class name="Case" table="ntc_cases" lazy="true">
+        <id name="id" type="java.lang.Integer">
+            <generator class="native"/>
+        </id>
+        <property name="chval" not-null="true" length="50" column="chval"/>
+        <property name="cdesc" not-null="true" length="50" column="cdesc"/>
+    </class>
+
+</hibernate-mapping>

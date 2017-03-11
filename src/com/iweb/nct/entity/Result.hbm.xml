@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.iweb.nct.entity">
+
+	<class name="Result" table="ntc_result" lazy="true">
+        <id name="id" type="java.lang.Integer">
+            <generator class="native">
+            	<param name="sequence">ntc_result_seq</param>
+            </generator>
+        </id>
+        <property name="userId" not-null="true" type="java.lang.Integer" column="user_id"/>
+        <property name="c1" type="java.lang.String" column="c1"/>
+        <property name="c2" type="java.lang.String" column="c2"/>
+        <property name="c3" type="java.lang.String" column="c3"/>
+        <property name="c4" type="java.lang.String" column="c4"/>
+        <property name="c5" type="java.lang.String" column="c5"/>
+        <property name="c6" type="java.lang.String" column="c6"/>
+        <property name="c7" type="java.lang.String" column="c7"/>
+        <property name="c8" type="java.lang.String" column="c8"/>
+        <property name="c9" type="java.lang.String" column="c9"/>
+    </class>
+
+</hibernate-mapping>

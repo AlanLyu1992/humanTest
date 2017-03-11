@@ -1,0 +1,18 @@
+<struts>
+    <package name="user" namespace="/user">
+        <action name="add" class="com.iweb.nct.action.UserAction" method="add">
+            <result name="success">/reg_success.jsp</result>
+            <result name="failure">/reg_failure.jsp</result>
+        </action>
+        <action name="find" class="com.iweb.nct.action.UserAction" method="find">
+            <result name="success">/login_success.jsp</result>
+            <result name="failure">/login_failure.jsp</result>
+        </action>
+        <action name="validate" class="com.iweb.nct.action.UserAction" method="validate">
+        </action>
+        <action name="list" class="com.iweb.nct.action.UserAction" method="list">
+        	<result name="success">/list_user.jsp</result>
+        </action>
+    </package>
+
+</struts>
